@@ -1,0 +1,32 @@
+# Lecture examples (kept locally only)
+examples/agent-lecture/
+examples/multi_agent_lecture/
+examples/tool_lecture/
+
+# Environment
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
