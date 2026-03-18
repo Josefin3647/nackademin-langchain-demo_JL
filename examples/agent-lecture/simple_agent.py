@@ -1,5 +1,5 @@
 from langchain.agents import create_agent
-from util.tools import get_current_time, calculate
+from util.tools import get_current_time, calculate, read_local_file
 from langgraph.checkpoint.memory import InMemorySaver
 
 from util.models import get_model
@@ -12,7 +12,7 @@ def run():
 
     agent = create_agent(
         model=model,
-        tools=[get_current_time, calculate],
+        tools=[get_current_time, calculate, read_local_file],
         system_prompt=(
             "Du är en hjälpsam assistent som svarar på användarens frågor. "
             "Svara alltid på svenska och var koncis men informativ."
